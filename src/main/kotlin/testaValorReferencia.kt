@@ -1,5 +1,5 @@
 fun testaValorReferencia() {
-    val contaMeg = Conta("Meg", 3)
+    val contaMeg = ContaPoupanca("Meg", 3)
 
     var contaMalu = contaMeg
     contaMalu.titular = "Malu"
