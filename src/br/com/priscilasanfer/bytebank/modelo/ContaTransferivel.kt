@@ -1,7 +1,7 @@
 package conta.modelo
 
 abstract class ContaTransferivel(
-    titular: String,
+    titular: Cliente,
     numero: Int
 ) : Conta(
     titular = titular,

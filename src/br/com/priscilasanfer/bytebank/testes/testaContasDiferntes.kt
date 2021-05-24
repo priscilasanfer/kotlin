@@ -1,20 +1,24 @@
+import conta.modelo.Cliente
 import conta.modelo.ContaCorrente
 import conta.modelo.ContaPoupanca
 import conta.modelo.ContaSalario
 
 fun testaContasDiferentes() {
+    val priscila = Cliente(nome = "Priscila", cpf = "123.658.985-45", senha =1)
     val contaCorrente = ContaCorrente(
-        titular = "Pri",
+        titular = priscila,
         numero = 1
     )
 
+    val meg = Cliente(nome = "Meg", cpf = "456.789.444-45", senha =2)
     val contaPoupanca = ContaPoupanca(
-        titular = "Meg",
+        titular = meg,
         numero = 2
     )
 
+    val gui = Cliente(nome = "Gui", cpf = "478.777.777-77", senha =3)
     val contaSalario = ContaSalario(
-        titular = "Gui",
+        titular = gui,
         numero = 1002
     )
 

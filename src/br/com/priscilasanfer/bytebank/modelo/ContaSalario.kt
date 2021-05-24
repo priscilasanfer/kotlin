@@ -1,7 +1,7 @@
 package conta.modelo
 
 class ContaSalario(
-    titular: String,
+    titular: Cliente,
     numero: Int
 ) : Conta(
     titular = titular,

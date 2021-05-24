@@ -1,8 +1,11 @@
+import conta.modelo.Cliente
 import conta.modelo.ContaCorrente
 import conta.modelo.ContaPoupanca
 
 fun testaComportamentosConta() {
-    val contaPriscila = ContaCorrente(titular = "Priscila", numero = 1)
+
+    val priscila = Cliente(nome = "Priscila", cpf = "123.658.985-45", senha =1)
+    val contaPriscila = ContaCorrente(titular = priscila, numero = 1)
     contaPriscila.deposita(-1000.00)
     println("___________________________")
     println("Dados conta Priscila")
@@ -10,8 +13,8 @@ fun testaComportamentosConta() {
     println("Numero da conta: ${contaPriscila.numero}")
     println("Saldo ${contaPriscila.saldo}")
 
-
-    val contaMalu = ContaPoupanca("Malu", 2)
+    val malu = Cliente(nome = "Malu", cpf = "456.789.444-45", senha =2)
+    val contaMalu = ContaPoupanca(malu, 2)
     contaMalu.deposita(2000.00)
     println("___________________________")
     println("Dados conta Malu")

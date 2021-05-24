@@ -1,10 +1,12 @@
+import conta.modelo.Cliente
 import conta.modelo.ContaPoupanca
 
 fun testaValorReferencia() {
-    val contaMeg = ContaPoupanca("Meg", 3)
+    val meg = Cliente(nome = "Meg", cpf = "456.789.444-45", senha =2)
+    val contaMeg = ContaPoupanca(meg, 3)
 
     var contaMalu = contaMeg
-    contaMalu.titular = "Malu"
+    contaMalu.titular.nome = "Malu"
 
     println(contaMalu)
     println(contaMeg)

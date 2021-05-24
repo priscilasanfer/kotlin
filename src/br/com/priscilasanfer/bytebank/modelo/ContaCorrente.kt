@@ -1,7 +1,7 @@
 package conta.modelo
 
 class ContaCorrente(
-    titular: String,
+    titular: Cliente,
     numero: Int
 ) : ContaTransferivel(
     titular = titular,
