@@ -7,7 +7,7 @@ import conta.modelo.ContaSalario
 fun testaContasDiferentes() {
     val priscila = Cliente(
         nome = "Priscila",
-        cpf = """123.658.985-45""",
+        cpf = "123.658.985-45",
         senha = 1,
         endereco = Endereco(
             logradouro = "Rua x",
