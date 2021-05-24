@@ -1,5 +1,5 @@
-import conta.ContaCorrente
-import conta.ContaPoupanca
+import conta.modelo.ContaCorrente
+import conta.modelo.ContaPoupanca
 
 fun testaComportamentosConta() {
     val contaPriscila = ContaCorrente(titular = "Priscila", numero = 1)

@@ -1,4 +1,4 @@
-package conta
+package conta.modelo
 
 class ContaPoupanca(
     titular: String,

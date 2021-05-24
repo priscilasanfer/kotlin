@@ -1,6 +1,6 @@
-import conta.ContaCorrente
-import conta.ContaPoupanca
-import conta.ContaSalario
+import conta.modelo.ContaCorrente
+import conta.modelo.ContaPoupanca
+import conta.modelo.ContaSalario
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(

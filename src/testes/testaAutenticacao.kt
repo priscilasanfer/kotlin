@@ -1,7 +1,7 @@
-import funcionario.Cliente
-import funcionario.Diretor
-import funcionario.Gerente
-import funcionario.SistemaInterno
+import conta.modelo.Cliente
+import conta.modelo.Diretor
+import conta.modelo.Gerente
+import conta.modelo.SistemaInterno
 
 fun testaAutenticacao() {
     val gerente = Gerente(

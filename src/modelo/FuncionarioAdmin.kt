@@ -1,4 +1,4 @@
-package funcionario
+package conta.modelo
 
 abstract class FuncionarioAdmin(
     nome: String,

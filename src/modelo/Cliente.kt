@@ -1,4 +1,4 @@
-package funcionario
+package conta.modelo
 
 class Cliente(
     val nome: String,

@@ -1,6 +1,6 @@
-package funcionario
+package conta.modelo
 
-class Auxiliar(
+class Analista(
     nome: String,
     cpf: String,
     salario: Double,
@@ -11,5 +11,7 @@ class Auxiliar(
 ) {
 
     override val bonificacao: Double
-        get() = salario* 0.05
-} 
+        get() {
+            return salario * 0.1
+        }
+}

@@ -1,6 +1,4 @@
-package funcionario
-
-import funcionario.Autenticavel
+package conta.modelo
 
 class SistemaInterno {
     fun entra(admin: Autenticavel, senha: Int) {

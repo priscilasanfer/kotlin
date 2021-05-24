@@ -1,7 +1,7 @@
-import funcionario.Analista
-import funcionario.CalculadoraBonificacao
-import funcionario.Diretor
-import funcionario.Gerente
+import conta.modelo.Analista
+import conta.modelo.CalculadoraBonificacao
+import conta.modelo.Diretor
+import conta.modelo.Gerente
 
 fun testaFuncionarios() {
     val malu = Analista(

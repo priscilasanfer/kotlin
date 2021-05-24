@@ -1,4 +1,4 @@
-import conta.ContaPoupanca
+import conta.modelo.ContaPoupanca
 
 fun testaValorReferencia() {
     val contaMeg = ContaPoupanca("Meg", 3)
@@ -8,6 +8,6 @@ fun testaValorReferencia() {
 
     println(contaMalu)
     println(contaMeg)
-    println("Titula conta.Conta Meg: ${contaMeg.titular}")
-    println("Titula conta.Conta Malu: ${contaMalu.titular}")
+    println("Titula Conta Meg: ${contaMeg.titular}")
+    println("Titula Conta Malu: ${contaMalu.titular}")
 }

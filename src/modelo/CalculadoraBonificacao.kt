@@ -1,4 +1,6 @@
-package funcionario
+package conta.modelo
+
+import conta.modelo.Funcionario
 
 class CalculadoraBonificacao {
     var total: Double = 0.0

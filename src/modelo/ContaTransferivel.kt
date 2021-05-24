@@ -1,4 +1,4 @@
-package conta
+package conta.modelo
 
 abstract class ContaTransferivel(
     titular: String,
