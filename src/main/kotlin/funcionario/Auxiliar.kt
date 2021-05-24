@@ -1,3 +1,5 @@
+package funcionario
+
 class Auxiliar(
     nome: String,
     cpf: String,

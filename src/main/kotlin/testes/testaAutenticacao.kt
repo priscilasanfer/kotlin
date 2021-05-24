@@ -1,3 +1,8 @@
+import funcionario.Cliente
+import funcionario.Diretor
+import funcionario.Gerente
+import funcionario.SistemaInterno
+
 fun testaAutenticacao() {
     val gerente = Gerente(
         nome = "Malu",

@@ -1,3 +1,5 @@
+package funcionario
+
 class Diretor(
     nome: String,
     cpf: String,

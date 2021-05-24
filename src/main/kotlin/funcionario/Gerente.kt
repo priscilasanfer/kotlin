@@ -1,17 +1,19 @@
-class Analista(
+package funcionario
+
+class Gerente(
     nome: String,
     cpf: String,
     salario: Double,
-) : Funcionario(
+    senha: Int
+) : FuncionarioAdmin(
     nome = nome,
     cpf = cpf,
-    salario = salario
+    salario = salario,
+    senha = senha
 ) {
-
 
     override val bonificacao: Double
         get() {
-            return salario * 0.1
+            return salario
         }
-
 } 

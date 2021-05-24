@@ -1,3 +1,6 @@
+import conta.ContaCorrente
+import conta.ContaPoupanca
+
 fun testaComportamentosConta() {
     val contaPriscila = ContaCorrente(titular = "Priscila", numero = 1)
     contaPriscila.deposita(-1000.00)

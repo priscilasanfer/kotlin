@@ -1,3 +1,8 @@
+import funcionario.Analista
+import funcionario.CalculadoraBonificacao
+import funcionario.Diretor
+import funcionario.Gerente
+
 fun testaFuncionarios() {
     val malu = Analista(
         nome = "Malu",

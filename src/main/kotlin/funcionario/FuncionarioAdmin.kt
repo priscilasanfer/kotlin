@@ -1,3 +1,5 @@
+package funcionario
+
 abstract class FuncionarioAdmin(
     nome: String,
     cpf: String,
