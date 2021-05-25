@@ -24,6 +24,7 @@ fun funcao2() {
         try {
             endereco as Endereco
         } catch (e: ClassCastException) {
+            e.printStackTrace()
             println("ClassCastException foi pegada")
         }
     }
