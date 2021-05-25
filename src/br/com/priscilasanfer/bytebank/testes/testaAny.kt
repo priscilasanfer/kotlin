@@ -3,16 +3,29 @@ package br.com.priscilasanfer.bytebank.testes
 import br.com.priscilasanfer.bytebank.modelo.Endereco
 
 fun testaAny() {
-    val endereco = Endereco()
+    val endereco = Endereco(
+        logradouro = "Rua vergueiro",
+        complemento = "Alura",
+        cep = "00000-0700"
+    )
+    val enderecoNovo = Endereco(
+        logradouro = "Rua vergueiro",
+        complemento = "Alura",
+        cep = "00000-0700"
+    )
 
-    val objeto: Any = Any()
+    println(endereco.equals(enderecoNovo))
 
-    imprime(objeto)
+    println(endereco.hashCode())
+    println(enderecoNovo.hashCode())
 
-    imprime(1)
-    imprime(1.0)
-    val teste: Any = imprime(endereco)
-    println(teste)
+    println(endereco)
+    println(enderecoNovo)
+
+    println(
+        "${endereco.javaClass}@${
+            Integer.toHexString(endereco.hashCode())}"
+    )
 }
 
 fun imprime(valor: Any): Any {

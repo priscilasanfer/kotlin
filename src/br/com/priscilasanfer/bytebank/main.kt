@@ -1,5 +1,9 @@
 package br.com.priscilasanfer.bytebank
 
-fun main() {
+import br.com.priscilasanfer.bytebank.testes.testaPilhaDeExecucao
 
+fun main() {
+ testaPilhaDeExecucao()
 }
+
+
