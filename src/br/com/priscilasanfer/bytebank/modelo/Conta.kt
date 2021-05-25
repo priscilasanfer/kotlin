@@ -1,7 +1,4 @@
-package conta.modelo
-
-var totalDeContas = 0
-    private set
+package br.com.priscilasanfer.bytebank.modelo
 
 abstract class Conta(
     var titular: Cliente,
@@ -10,9 +7,13 @@ abstract class Conta(
     var saldo = 0.0
         protected set
 
+    companion object {
+        var total = 0
+            private set
+    }
 
     init {
-        totalDeContas++
+        total++
     }
 
     fun deposita(valor: Double) {
