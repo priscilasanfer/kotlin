@@ -1,7 +1,7 @@
 package br.com.priscilasanfer.bytebank.testes
 
-import conta.modelo.Autenticavel
-import conta.modelo.SistemaInterno
+import br.com.priscilasanfer.bytebank.modelo.Autenticavel
+import br.com.priscilasanfer.bytebank.modelo.SistemaInterno
 
 fun testaObject() {
     val malu = object : Autenticavel {

@@ -1,6 +1,4 @@
-package conta.modelo
-
-import br.com.priscilasanfer.bytebank.modelo.Endereco
+package br.com.priscilasanfer.bytebank.modelo
 
 class Cliente(
     var nome: String,

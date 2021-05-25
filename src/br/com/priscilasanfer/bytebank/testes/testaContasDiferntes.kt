@@ -1,8 +1,10 @@
+package br.com.priscilasanfer.bytebank.testes
+
 import br.com.priscilasanfer.bytebank.modelo.Endereco
-import conta.modelo.Cliente
-import conta.modelo.ContaCorrente
-import conta.modelo.ContaPoupanca
-import conta.modelo.ContaSalario
+import br.com.priscilasanfer.bytebank.modelo.Cliente
+import br.com.priscilasanfer.bytebank.modelo.ContaCorrente
+import br.com.priscilasanfer.bytebank.modelo.ContaPoupanca
+import br.com.priscilasanfer.bytebank.modelo.ContaSalario
 
 fun testaContasDiferentes() {
     val priscila = Cliente(

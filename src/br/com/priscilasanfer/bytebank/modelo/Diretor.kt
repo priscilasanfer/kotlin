@@ -1,4 +1,4 @@
-package conta.modelo
+package br.com.priscilasanfer.bytebank.modelo
 
 class Diretor(
     nome: String,

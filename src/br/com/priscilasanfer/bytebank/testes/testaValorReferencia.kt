@@ -1,5 +1,7 @@
-import conta.modelo.Cliente
-import conta.modelo.ContaPoupanca
+package br.com.priscilasanfer.bytebank.testes
+
+import br.com.priscilasanfer.bytebank.modelo.Cliente
+import br.com.priscilasanfer.bytebank.modelo.ContaPoupanca
 
 fun testaValorReferencia() {
     val meg = Cliente(nome = "Meg", cpf = "456.789.444-45", senha =2)

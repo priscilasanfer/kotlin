@@ -1,7 +1,9 @@
-import conta.modelo.Analista
-import conta.modelo.CalculadoraBonificacao
-import conta.modelo.Diretor
-import conta.modelo.Gerente
+package br.com.priscilasanfer.bytebank.testes
+
+import br.com.priscilasanfer.bytebank.modelo.Analista
+import br.com.priscilasanfer.bytebank.modelo.CalculadoraBonificacao
+import br.com.priscilasanfer.bytebank.modelo.Diretor
+import br.com.priscilasanfer.bytebank.modelo.Gerente
 
 fun testaFuncionarios() {
     val malu = Analista(

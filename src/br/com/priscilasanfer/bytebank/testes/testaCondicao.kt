@@ -1,3 +1,5 @@
+package br.com.priscilasanfer.bytebank.testes
+
 fun testaCondicao() {
     var saldo = 10.0
     when {

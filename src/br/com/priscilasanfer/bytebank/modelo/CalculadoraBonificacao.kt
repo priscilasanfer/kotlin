@@ -1,6 +1,4 @@
-package conta.modelo
-
-import conta.modelo.Funcionario
+package br.com.priscilasanfer.bytebank.modelo
 
 class CalculadoraBonificacao {
     var total: Double = 0.0

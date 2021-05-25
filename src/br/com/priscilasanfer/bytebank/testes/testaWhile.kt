@@ -1,3 +1,5 @@
+package br.com.priscilasanfer.bytebank.testes
+
 fun testaWhile() {
     var i = 0
     while (i < 5) {

@@ -1,6 +1,4 @@
-package conta.modelo
-
-import conta.modelo.Funcionario
+package br.com.priscilasanfer.bytebank.modelo
 
 class Auxiliar(
     nome: String,

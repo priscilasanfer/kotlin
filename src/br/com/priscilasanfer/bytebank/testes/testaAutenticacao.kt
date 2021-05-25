@@ -1,7 +1,9 @@
-import conta.modelo.Cliente
-import conta.modelo.Diretor
-import conta.modelo.Gerente
-import conta.modelo.SistemaInterno
+package br.com.priscilasanfer.bytebank.testes
+
+import br.com.priscilasanfer.bytebank.modelo.Cliente
+import br.com.priscilasanfer.bytebank.modelo.Diretor
+import br.com.priscilasanfer.bytebank.modelo.Gerente
+import br.com.priscilasanfer.bytebank.modelo.SistemaInterno
 
 fun testaAutenticacao() {
     val gerente = Gerente(

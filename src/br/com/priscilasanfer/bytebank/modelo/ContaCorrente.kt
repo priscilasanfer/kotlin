@@ -1,4 +1,4 @@
-package conta.modelo
+package br.com.priscilasanfer.bytebank.modelo
 
 class ContaCorrente(
     titular: Cliente,

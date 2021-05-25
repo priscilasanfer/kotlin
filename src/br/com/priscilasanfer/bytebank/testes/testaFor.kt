@@ -1,3 +1,5 @@
+package br.com.priscilasanfer.bytebank.testes
+
 fun testaFor() {
     for (i in 1..5) {
         val titular: String = "Priscila $i"

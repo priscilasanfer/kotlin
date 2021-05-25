@@ -1,6 +1,8 @@
-import conta.modelo.Cliente
-import conta.modelo.ContaCorrente
-import conta.modelo.ContaPoupanca
+package br.com.priscilasanfer.bytebank.testes
+
+import br.com.priscilasanfer.bytebank.modelo.Cliente
+import br.com.priscilasanfer.bytebank.modelo.ContaCorrente
+import br.com.priscilasanfer.bytebank.modelo.ContaPoupanca
 
 fun testaComportamentosConta() {
 
