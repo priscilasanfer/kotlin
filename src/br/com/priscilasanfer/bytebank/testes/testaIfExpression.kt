@@ -1,11 +1,12 @@
 package br.com.priscilasanfer.bytebank.testes;
 
 fun testaIfExpression() {
+    val valorComTaxa: Double? = valorComTaxa(100.0)
+}
 
-    val valorRecebido = 10.0
-    val valorComTaxa: Double? = if (valorRecebido != null) {
-        valorRecebido + 0.1
-    } else {
-        null
+fun valorComTaxa(valorRecebido: Double?): Double? {
+    if (valorRecebido != null) {
+        return valorRecebido + 0.1
     }
+    return null
 }
