@@ -18,11 +18,24 @@ fun main(){
 
     println(maiorIdade)
 
-    val idades = IntArray(4)
-    idades[0]=25
-    idades[1]=19
-    idades[2]=33
-    idades[3]=20
+    val idades: IntArray= intArrayOf(25,19,33,20,55)
 
+    var maiorIdade2 = Int.MIN_VALUE
+    for (idade in idades){
+        if(idade > maiorIdade2){
+            maiorIdade2 = idade
+        }
+    }
+
+    println(maiorIdade2)
+
+    var menorIdade = Int.MAX_VALUE
+    idades.forEach { idade ->
+        if(idade < menorIdade){
+            menorIdade = idade
+        }
+    }
+
+    println(menorIdade)
 
 }
