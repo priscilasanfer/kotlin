@@ -1,6 +1,6 @@
 package br.com.priscilasanfer.array
 
-fun main(){
+fun introArrays(){
     val idade1 = 25
     val idade2 = 19
     val idade3 = 33
