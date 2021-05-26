@@ -1,6 +1,7 @@
 package br.com.priscilasanfer.bytebank.modelo
 
-import br.com.priscilasanfer.bytebank.exception.SaldoInsuficiente
+import br.com.priscilasanfer.bytebank.exception.FalhaAutenticacaoException
+import br.com.priscilasanfer.bytebank.exception.SaldoInsuficienteException
 
 abstract class ContaTransferivel(
     titular: Cliente,
@@ -10,10 +11,16 @@ abstract class ContaTransferivel(
     numero = numero
 ) {
 
-    fun transfere(valor: Double, destino: Conta) {
+    fun transfere(valor: Double, destino: Conta, senha: Int) {
         if (saldo < valor) {
-            throw SaldoInsuficiente()
+            throw SaldoInsuficienteException(
+                mensagem = "O saldo é insuficiente, saldo atual: $saldo, valor a ser subtraído $valor")
         }
+
+        if (!autentica(senha)){
+            throw FalhaAutenticacaoException()
+        }
+
         saldo -= valor
         destino.deposita(valor)
     }

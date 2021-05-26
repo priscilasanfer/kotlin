@@ -1,5 +1,7 @@
 package br.com.priscilasanfer.bytebank.testes
 
+import br.com.priscilasanfer.bytebank.exception.FalhaAutenticacaoException
+import br.com.priscilasanfer.bytebank.exception.SaldoInsuficienteException
 import br.com.priscilasanfer.bytebank.modelo.Cliente
 import br.com.priscilasanfer.bytebank.modelo.ContaCorrente
 import br.com.priscilasanfer.bytebank.modelo.ContaPoupanca
@@ -40,7 +42,28 @@ fun testaComportamentosConta() {
     println("Testando transferencia  da conta da Priscila para a da Malu")
     println("Saldo inicial Priscila: ${contaPriscila.saldo}")
     println("Saldo inicial Malu: ${contaMalu.saldo}")
-    contaPriscila.transfere(50.00, contaMalu)
+    contaPriscila.transfere(50.00, contaMalu, 1)
     println("Saldo final Priscila: ${contaPriscila.saldo}")
     println("Saldo final Malu: ${contaMalu.saldo}")
+
+    val fran = Cliente(nome = "Fran", cpf = "", senha = 2)
+    val contaFran = ContaPoupanca(numero = 1001, titular = fran)
+    contaFran.deposita(300.0)
+
+    val alex = Cliente(nome = "Alex", cpf = "", senha = 1)
+    val contaAlex = ContaCorrente(titular = alex, numero = 1000)
+    contaAlex.deposita(200.0)
+
+    try {
+        contaFran.transfere(destino = contaAlex, valor = 250.0, senha = 2)
+        println("Transferência sucedida")
+    } catch (e: SaldoInsuficienteException){
+        println("Falha na transferência")
+        println("Saldo insuficiente")
+        e.printStackTrace()
+    } catch (e: FalhaAutenticacaoException){
+        println("Falha na transferência")
+        println("Falha na autenticação")
+        e.printStackTrace()
+    }
 }

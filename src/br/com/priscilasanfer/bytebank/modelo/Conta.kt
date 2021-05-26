@@ -3,7 +3,7 @@ package br.com.priscilasanfer.bytebank.modelo
 abstract class Conta(
     var titular: Cliente,
     val numero: Int
-) {
+) : Autenticavel {
     var saldo = 0.0
         protected set
 
@@ -23,5 +23,9 @@ abstract class Conta(
     }
 
     abstract fun saca(valor: Double)
+
+    override fun autentica(senha: Int): Boolean {
+        return titular.autentica(senha)
+    }
 
 }
