@@ -1,7 +1,7 @@
 package br.com.priscilasanfer
 
-import br.com.priscilasanfer.array.operacoesAgregadoras
+import br.com.priscilasanfer.array.salarioComBigDecimal
 
 fun main(){
-    operacoesAgregadoras()
+    salarioComBigDecimal()
 }
