@@ -38,7 +38,7 @@ fun main() {
         )
     )
 
-   livros.imprimeComMarcadores()
+    livros.imprimeComMarcadores()
 
     livros.remove(livro1)
 
@@ -50,6 +50,13 @@ fun main() {
 
     val ordenadoPorTitulo = livros.sortedBy { it.titulo }
     ordenadoPorTitulo.imprimeComMarcadores()
+
+    val titulos: List<String> = listaDeLivros
+        .filter { it.autor.startsWith("João") }
+        .sortedBy { it.anoPublicacao }
+        .map { it.titulo }
+
+    println(titulos)
 }
 
 fun List<Livro>.imprimeComMarcadores() {
