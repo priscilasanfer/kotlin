@@ -35,4 +35,7 @@ No final, estamos reordenando o mesmo objeto e temos duas variáveis apontando p
 O que acontece aqui, quando imprimimos tudo de uma vez, no final? Estamos reimprimindo a mesma lista.
 Como a última função que chamamos foi “organizarPorAnoPublicacao”, as duas listas, que são as duas variáveis,
 apontam para a mesma lista - que está organizada por “AnoPublicacao”.
+
+
+pra resolver basta usar o List ao inves do MultableList
  */
