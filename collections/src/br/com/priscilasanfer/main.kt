@@ -1,38 +1,39 @@
 package br.com.priscilasanfer
 
 fun main() {
-    val assistiramCursoAndroid: Set<String> = setOf("Meg", "Malu", "Alex", "Rafael")
-    val assistiramCursoKotlin: Set<String> = setOf("Meg", "Paulo", "Maria")
-//    val assistiramAmbos: Set<String> = assistiramCursoAndroid + assistiramCursoKotlin
+    val pedidos = mutableMapOf<Int, Double>(
+        Pair(1, 20.0),
+        Pair(2, 34.0),
+        3 to 50.0
+    )
+    println(pedidos)
 
+    val pedido = pedidos[3]
 
-    val assistiramAmbos = mutableSetOf<String>()
-    assistiramAmbos.addAll(assistiramCursoAndroid)
-    assistiramAmbos.addAll(assistiramCursoKotlin)
+    pedido?.let {
+        println("pedido ${it}")
+    }
 
-    assistiramAmbos.add("Ana")
-    println(assistiramAmbos)
+    for (p: Map.Entry<Int, Double> in pedidos) {
+        println("Numero do p ${p.key}")
+        println("Valor do p ${p.value}")
+    }
 
+    pedidos[3] = 70.0
+    println(pedidos)
+    pedidos.put(4,80.0)
+    println(pedidos)
+    pedidos[1] = 100.0
+    println(pedidos)
 
-    println(assistiramCursoAndroid + assistiramCursoKotlin)
-    println(assistiramCursoAndroid union assistiramCursoKotlin)
-    println( assistiramCursoKotlin + assistiramCursoAndroid)
-    println(  assistiramCursoKotlin union  assistiramCursoAndroid)
+    pedidos.putIfAbsent(6,200.0)
+    println(pedidos)
 
-    println(assistiramCursoAndroid - assistiramCursoKotlin)
-    println(assistiramCursoAndroid subtract  assistiramCursoKotlin)
-    println( assistiramCursoKotlin - assistiramCursoAndroid)
-    println(  assistiramCursoKotlin subtract   assistiramCursoAndroid)
-
-    println(assistiramCursoKotlin intersect  assistiramCursoAndroid)
-
-    val assistiramList = assistiramAmbos.toMutableList()
-    assistiramList.add("Meg")
-    println(assistiramList.toSet())
+    pedidos.remove(6)
+    println(pedidos)
+    pedidos.remove(1, 50.0)
+    println(pedidos)
 
 
 }
-
-
-//Utilizando o Set
 
