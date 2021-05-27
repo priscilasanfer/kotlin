@@ -3,16 +3,18 @@ package br.com.priscilasanfer
 fun main(){
 
     val banco = BancoDeNomes()
+    val nomesSalvos: Collection<String> = banco.nomes
+//    banco.nomes.add("Alex")
     banco.salva("Copo")
+    println(nomesSalvos)
     println(banco.nomes)
-
     println(BancoDeNomes().nomes)
 
 
 }
 
 class BancoDeNomes{
-    val nomes: Collection<String>get()= Companion.dados
+    val nomes: Collection<String>get()= Companion.dados.toList()
 
     fun salva(nome: String){
         Companion.dados.add(nome)
