@@ -1,40 +1,38 @@
 package br.com.priscilasanfer
 
-fun main(){
+fun main() {
+    val assistiramCursoAndroid: Set<String> = setOf("Meg", "Malu", "Alex", "Rafael")
+    val assistiramCursoKotlin: Set<String> = setOf("Meg", "Paulo", "Maria")
+//    val assistiramAmbos: Set<String> = assistiramCursoAndroid + assistiramCursoKotlin
 
-    val banco = BancoDeNomes()
-    val nomesSalvos: Collection<String> = banco.nomes
-//    banco.nomes.add("Alex")
-    banco.salva("Copo")
-    println(nomesSalvos)
-    println(banco.nomes)
-    println(BancoDeNomes().nomes)
+
+    val assistiramAmbos = mutableSetOf<String>()
+    assistiramAmbos.addAll(assistiramCursoAndroid)
+    assistiramAmbos.addAll(assistiramCursoKotlin)
+
+    assistiramAmbos.add("Ana")
+    println(assistiramAmbos)
+
+
+    println(assistiramCursoAndroid + assistiramCursoKotlin)
+    println(assistiramCursoAndroid union assistiramCursoKotlin)
+    println( assistiramCursoKotlin + assistiramCursoAndroid)
+    println(  assistiramCursoKotlin union  assistiramCursoAndroid)
+
+    println(assistiramCursoAndroid - assistiramCursoKotlin)
+    println(assistiramCursoAndroid subtract  assistiramCursoKotlin)
+    println( assistiramCursoKotlin - assistiramCursoAndroid)
+    println(  assistiramCursoKotlin subtract   assistiramCursoAndroid)
+
+    println(assistiramCursoKotlin intersect  assistiramCursoAndroid)
+
+    val assistiramList = assistiramAmbos.toMutableList()
+    assistiramList.add("Meg")
+    println(assistiramList.toSet())
 
 
 }
 
-class BancoDeNomes{
-    val nomes: Collection<String>get()= Companion.dados.toList()
 
-    fun salva(nome: String){
-        Companion.dados.add(nome)
-    }
+//Utilizando o Set
 
-    companion object {
-        private val dados = mutableListOf<String>()
-    }
-}
-
-fun testaColecao() {
-    val nomes: List<String> = listOf(
-        "Meg",
-        "Malu",
-        "Rafael",
-        "Regina"
-    )
-
-    println(nomes)
-
-    println("Tem Nome Rafael? ${nomes.contains("Rafael")}")
-    println("tAMANHo da Lista: ${nomes.size}")
-}
