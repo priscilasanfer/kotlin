@@ -61,6 +61,7 @@ https://cursos.alura.com.br/formacao-kotlin
 - O que é o tipo função (function type), como declará-lo e inicializá-lo
 - O que é função de alta ordem (higher-order function) e como implementá-la
 - Utilize expressão lambda e funções anônimas
-- Conheça cada uma das funções de escopo (scope functions)
+- Conheça cada uma das funções de escopo (scope functions) 
+  https://github.com/alura-cursos/kotlin-funcional/blob/resources/funcoes-de-escopo-kotlin.pdf
 - Saiba a diferença entre objeto de contexto via argumento ou receptor
 - Implemente códigos utilizando os recursos do funcional
