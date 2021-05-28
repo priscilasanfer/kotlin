@@ -26,25 +26,21 @@ fun testaFuncaoAnonima() {
 }
 
 fun testaTipoFuncaoClasse() {
-    val minhaFuncaoClasse: () -> Unit = Teste()
+    val minhaFuncaoClasse: (Int, Int) -> Int = Soma()
     println(minhaFuncaoClasse)
-    println(minhaFuncaoClasse()) // Lazy - so invoca quando é chamada
+    println(minhaFuncaoClasse(5, 6)) // Lazy - so invoca quando é chamada
 }
 
 fun testaTipoFuncaoReferencia() {
-    val minhaFuncao = ::teste
+    val minhaFuncao: (Int, Int) -> Int = ::soma
     println(minhaFuncao)
-    println(minhaFuncao())
+    println(minhaFuncao(2, 2))
 }
 
-fun teste() {
-    println("Executa teste")
+fun soma(a: Int, b: Int): Int {
+    return a + b
 }
 
-
-class Teste : () -> Unit {
-    override fun invoke() {
-        println("executa invoke")
-    }
-
+class Soma : (Int, Int) -> Int {
+    override fun invoke(a: Int, b: Int): Int = a + b
 }
