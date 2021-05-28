@@ -1,4 +1,4 @@
-package br.com.priscilasanfer
+package br.com.priscilasanfer.testes
 
 fun testaTipoFuncaoClasse() {
     val minhaFuncaoClasse: (Int, Int) -> Int = Soma()

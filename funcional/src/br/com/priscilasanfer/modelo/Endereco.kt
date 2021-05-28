@@ -1,4 +1,4 @@
-package br.com.priscilasanfer
+package br.com.priscilasanfer.modelo
 
 class Endereco(
     var logradouro: String = "",
