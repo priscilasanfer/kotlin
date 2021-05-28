@@ -54,3 +54,13 @@ https://cursos.alura.com.br/formacao-kotlin
 - Utilize operações específicas de Set ou Map
 - Conheça funções relacionadas a List, Set e Map
 
+## Módulo Funcional
+
+### Cruso 7 - Kotlin: recursos do paradigma funcional
+- Entenda quais são os principais recursos do paradigma funcional presentes no Kotlin
+- O que é o tipo função (function type), como declará-lo e inicializá-lo
+- O que é função de alta ordem (higher-order function) e como implementá-la
+- Utilize expressão lambda e funções anônimas
+- Conheça cada uma das funções de escopo (scope functions)
+- Saiba a diferença entre objeto de contexto via argumento ou receptor
+- Implemente códigos utilizando os recursos do funcional
